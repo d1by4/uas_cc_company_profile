@@ -11,6 +11,12 @@
         </div>
     </section>
     <section id="menu" class="py-5">
+        @if (session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
+
         <menu>
             <div class="container-fluid">
                 <div class="container">
@@ -41,6 +47,7 @@
                                                     <td>{{ number_format($menu->harga, 2, ',', '.') }}</td>
                                                     <td>
                                                         <a href="menu-detail/{{ $menu->id }}" class="btn btn-success">Detail</a>
+                                                        <a href="menu-delete/{{ $menu->id }}" class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
                                             @endforeach

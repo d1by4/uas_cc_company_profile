@@ -24,26 +24,16 @@
                 </div>
                 <div class="form-group">
                     <label for="fotoInput">Masukkan Foto</label>
-                    <div class="input-group">
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="fotoInput">
-                            <label class="custom-file-label" for="fotoInput">Choose file</label>
-                        </div>
-                        <div class="input-group-append">
-                            <span class="input-group-text">Upload</span>
-                        </div>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="foto" name="foto">
+                        <label class="input-group-text" for="foto">Upload</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="fileInput">Masukkan File</label>
-                    <div class="input-group">
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="fileInput">
-                            <label class="custom-file-label" for="fileInput">Choose file</label>
-                        </div>
-                        <div class="input-group-append">
-                            <span class="input-group-text">Upload</span>
-                        </div>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="file" name="file">
+                        <label class="input-group-text" for="file">Upload</label>
                     </div>
                 </div>
             </div>

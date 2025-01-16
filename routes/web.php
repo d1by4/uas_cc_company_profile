@@ -27,5 +27,6 @@ Route::get('/menu', [menuController::class, 'index']);
 Route::get('/menu-detail/{id}', [menuController::class, 'show']);
 Route::get('/menu-add', [menuController::class, 'menuAdd']);
 Route::post('/menu-store', [menuController::class, 'store']);
+Route::get('/menu-delete/{id}', [menuController::class, 'menuDelete']);
 
 Route::get('/kontak', [kontakController::class, 'index']);
